@@ -66,12 +66,8 @@ const processOrder = ( { quantity, price: {amount}, price: {currency} } ) => {
 
  }
  
-//const { quantity, price: {amount}, price: {currency} } = order
-
 
  let totalCost = processOrder(order);
-
-//console.log("quantity:",quantity,"amount:", amount,"currency:", currency);
 
 console.log("Total Cost:",totalCost)
 
