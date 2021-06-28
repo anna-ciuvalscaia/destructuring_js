@@ -48,7 +48,7 @@ console.log("after",a,b);
 //HW: 3 ????????
 ///////Destructurizarea in argumentii functiilor
 
-const processOrder = ( order ) => {
+const processOrder = ( { quantity, price: {amount}, price: {currency} } ) => {
 
     let cost = quantity * amount
     return cost
@@ -66,12 +66,12 @@ const processOrder = ( order ) => {
 
  }
  
-const { quantity, price: {amount}, price: {currency} } = order
+//const { quantity, price: {amount}, price: {currency} } = order
 
 
  let totalCost = processOrder(order);
 
-console.log("quantity:",quantity,"amount:", amount,"currency:", currency);
+//console.log("quantity:",quantity,"amount:", amount,"currency:", currency);
 
 console.log("Total Cost:",totalCost)
 
